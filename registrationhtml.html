@@ -1,0 +1,15 @@
+<!-- Replace the form opening tag with: -->
+<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+    <!-- Add this hidden field for better subject lines -->
+    <input type="hidden" name="_subject" value="New Student Registration - CS 224L">
+    
+    <!-- Add this for redirect after submission -->
+    <input type="hidden" name="_next" value="https://YOUR_GITHUB_PAGES_URL/thank-you.html">
+    
+    <!-- Rest of your form fields remain the same -->
+    
+    <!-- Add a success message div (optional) -->
+    <div style="display:none;" id="success-message">
+        Thank you for registering! We'll contact you soon.
+    </div>
+</form>

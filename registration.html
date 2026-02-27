@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</header>
+      <nav>
+        <a href="Home.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="schedul.html">Schedule</a> |
+        <a href="registration.html">Register</a>
+    </nav>
+</header>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - CS 224L</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .radio-group {
+            display: flex;
+            gap: 1rem;
+        }
+        .radio-group label {
+            display: inline;
+            font-weight: normal;
+        }
+        button {
+            background-color: #0047ab;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #003380;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .checkbox-group label {
+            display: inline;
+            margin: 0;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>CS 224L Web Technologies - Fall Semester 2024</p>
+        <p>Department of Computer Science, UET Peshawar</p>
+        <hr>
+    </header>
+    
+    <main>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="regno">Registration Number:</label>
+                <input type="text" id="regno" name="regno" required placeholder="e.g., 2024-CS-001">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Create a password">
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select a course --</option>
+                    <option value="cs224l">CS 224L Web Technologies (Mr. Mohammad)</option>
+                    <option value="cs210">CS 210 Data Structures</option>
+                    <option value="cs310">CS 310 Database Systems</option>
+                    <option value="mt100">MT 100 Linear Algebra</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Semester:</label>
+                <div class="radio-group">
+                    <input type="radio" id="sem1" name="semester" value="1" required>
+                    <label for="sem1">1st Semester</label>
+                    
+                    <input type="radio" id="sem2" name="semester" value="2">
+                    <label for="sem2">2nd Semester</label>
+                    
+                    <input type="radio" id="sem3" name="semester" value="3">
+                    <label for="sem3">3rd Semester</label>
+                    
+                    <input type="radio" id="sem4" name="semester" value="4">
+                    <label for="sem4">4th Semester</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Register Now</button>
+            </div>
+        </form>
+        
+        <hr>
+        <p><a href="Home.html">Back to Home</a></p>
+    </main>
+    </footer>
+</body>
+</html>

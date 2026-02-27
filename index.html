@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio and lab exercises for CS 224L Web Technologies course at UET Peshawar">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="HTML, Web Technologies, UET Peshawar, CS 224L">
+    <title>Noor - CS 224L Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.2;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0047ab, #002366);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        .uet-branding {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.5;
+        }
+        
+        nav {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #0047ab;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #0047ab;
+            color: white;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: #0047ab;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #ffd700;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .card h3 {
+            color: #0047ab;
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #0047ab;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #003380;
+        }
+        
+        .profile-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .profile-links a {
+            color: #0047ab;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #0047ab;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .profile-links a:hover {
+            background-color: #0047ab;
+            color: white;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Computer Science Student | Web Technologies (CS 224L)</p>
+        <div class="uet-branding">
+            <p>Department of Computer Science</p>
+            <p>University of Engineering & Technology, Peshawar</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="schedul.html">Schedule</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="lab02.html">Lab 02</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Welcome to My Web Technologies Portfolio</h2>
+            <p>This website showcases my lab exercises and projects for <strong>CS 224L Web Technologies</strong> course taught by <strong>Mr. Mohammad, Lecturer</strong> at the Department of Computer Science, UET Peshawar.</p>
+            
+            <div class="profile-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+                <a href="https://www.uetpeshawar.edu.pk/" target="_blank">UET Peshawar</a>
+                <a href="mailto:your.email@example.com">Email Me</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Lab Exercises</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>📄 Lab 02: HTML Basics</h3>
+                    <p>Basic HTML structure, headings, paragraphs, and text formatting tags.</p>
+                    <a href="lab02.html" class="btn">View Exercise</a>
+                </div>
+                
+                <div class="card">
+                    <h3>👤 Personal Profile</h3>
+                    <p>Personal profile page with bio, image, and contact information.</p>
+                    <a href="profile.html" class="btn">View Profile</a>
+                </div>
+                
+                <div class="card">
+                    <h3>📅 Course Schedule</h3>
+                    <p>Weekly class schedule with days, time slots, and course information.</p>
+                    <a href="schedule.html" class="btn">View Schedule</a>
+                </div>
+                
+                <div class="card">
+                    <h3>🧭 Navigation Menu</h3>
+                    <p>Semantic navigation with internal and external links.</p>
+                    <a href="navigation.html" class="btn">View Navigation</a>
+                </div>
+                
+                <div class="card">
+                    <h3>📝 Registration Form</h3>
+                    <p>Student registration form with various input types.</p>
+                    <a href="registration.html" class="btn">View Form</a>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>About This Site</h2>
+            <p>This website is part of the <strong>CS 224L Web Technologies</strong> course requirements. It demonstrates:</p>
+            <ul style="margin-left: 2rem;">
+                <li>Proper HTML5 structure and semantics</li>
+                <li>Responsive design principles</li>
+                <li>Navigation and linking strategies</li>
+                <li>Form creation and validation</li>
+                <li>Table-based scheduling</li>
+                <li>GitHub Pages deployment</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
